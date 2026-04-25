@@ -1,0 +1,11 @@
+// Updated index.php sources list in Alpine.js
+...
+                sources: [
+                    { id: 'all', name: 'All Sources' },
+                    { id: 'gutenberg', name: 'Gutenberg' },
+                    { id: 'openlibrary', name: 'Open Library' },
+                    { id: 'internetarchive', name: 'Archive.org' },
+                    { id: 'loc', name: 'LoC' },
+                    { id: 'doab', name: 'DOAB' }
+                ],
+...

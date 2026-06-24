@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Landmark, GraduationCap, School, BookOpen, ChevronRight, Sparkles, ShieldCheck, Library } from 'lucide-react';
-import { Institution, ZIMBABWE_INSTITUTIONS } from '../../data/institutions';
+import { Institution, ZIMBABWE_INSTITUTIONS } from '../data/institutions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Logo } from '../layout/Logo';
+import { Logo } from '../components/layout/Logo';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 

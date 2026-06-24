@@ -1,4 +1,3 @@
-import React from "react";
 import { GraduationCap, Landmark, Sparkles } from "lucide-react";
 
 export function CurriculumPage() {

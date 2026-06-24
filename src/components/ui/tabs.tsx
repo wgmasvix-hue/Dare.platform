@@ -1,15 +1,41 @@
-export function Tabs(props: any) {
-  return null;
+import React from "react";
+
+interface TabsProps {
+  children: React.ReactNode;
+  value?: string;
+  onValueChange?: (value: string) => void;
+  className?: string;
 }
 
-export function TabsList(props: any) {
-  return null;
+interface TabsListProps {
+  children: React.ReactNode;
+  className?: string;
 }
 
-export function TabsTrigger(props: any) {
-  return null;
+interface TabsTriggerProps {
+  children: React.ReactNode;
+  value?: string;
+  className?: string;
 }
 
-export function TabsContent(props: any) {
-  return null;
+interface TabsContentProps {
+  children: React.ReactNode;
+  value?: string;
+  className?: string;
 }
+
+export const Tabs: React.FC<TabsProps> = ({ children }) => {
+  return <div>{children}</div>;
+};
+
+export const TabsList: React.FC<TabsListProps> = ({ children }) => {
+  return <div>{children}</div>;
+};
+
+export const TabsTrigger: React.FC<TabsTriggerProps> = ({ children }) => {
+  return <button>{children}</button>;
+};
+
+export const TabsContent: React.FC<TabsContentProps> = ({ children }) => {
+  return <div>{children}</div>;
+};

@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Landmark, GraduationCap, School, BookOpen, ChevronRight, Sparkles, ShieldCheck, Library } from 'lucide-react';
+import { Search, GraduationCap, School, Sparkles, ShieldCheck, Library, ChevronRight, Landmark, BookOpen } from 'lucide-react';
 import { Institution, ZIMBABWE_INSTITUTIONS } from '../data/institutions';
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Logo } from '../components/layout/Logo';
-import { Card } from '@/components/ui/card';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface LandingPageProps {
@@ -87,7 +85,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSelectInstitution })
                   placeholder="Search for your university or college..." 
                   className="pl-12 h-14 bg-white/5 border-white/10 text-white placeholder:text-slate-500 focus-visible:ring-[#d4af37] focus-visible:bg-white/10 rounded-2xl text-lg font-medium"
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
                 />
               </div>
               

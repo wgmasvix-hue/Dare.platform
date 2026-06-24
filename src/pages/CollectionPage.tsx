@@ -1,9 +1,7 @@
-import React from "react";
 import { Dashboard } from "../components/dashboard/Dashboard";
 import { Book } from "../types/book";
 import { Institution } from "../data/institutions";
-import { motion } from "framer-motion";
-import { Library, Landmark } from "lucide-react";
+import { Library } from "lucide-react";
 
 interface CollectionPageProps {
   searchQuery: string;

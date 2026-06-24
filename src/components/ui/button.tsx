@@ -1,3 +1,5 @@
-export function Button(props: any) {
+import React from "react";
+
+export const Button: React.FC<React.PropsWithChildren> = () => {
   return null;
-}
+};

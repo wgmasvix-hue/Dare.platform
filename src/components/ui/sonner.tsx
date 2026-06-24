@@ -1,3 +1,10 @@
-export function Toaster(props: any) {
-  return null;
+import React from "react";
+
+interface ToasterProps {
+  position?: string;
+  richColors?: boolean;
 }
+
+export const Toaster: React.FC<ToasterProps> = () => {
+  return null;
+};

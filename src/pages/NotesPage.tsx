@@ -1,6 +1,4 @@
-import React from "react";
-import { FileText, Sparkles, BookOpen } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import { FileText } from "lucide-react";
 
 export function NotesPage() {
   return (

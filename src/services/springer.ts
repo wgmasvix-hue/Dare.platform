@@ -50,7 +50,7 @@ export const fetchSpringerBooks = async (query?: string, page: number = 1): Prom
   }
 };
 
-const getMockSpringerBooks = (query: string, page: number): Book[] => {
+const getMockSpringerBooks = (_query: string, page: number): Book[] => {
   const categories = ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Quantum Computing", "Data Science", "Neural Networks"];
   const authors = ["Dr. Sarah Chen", "Prof. Marcus Thorne", "Elena Rodriguez, PhD", "Hiroshi Tanaka", "Sarah Jenkins"];
   

@@ -65,7 +65,7 @@ const performInDepthAnalysis = (book: Book) => {
 /**
  * Maps analysis results to Education 5.0 concepts specific to Zimbabwe
  */
-const mapToEducation5Principles = (analysis: string[], book: Book) => {
+const mapToEducation5Principles = (analysis: string[]) => {
   const contextMap: Record<string, string> = {
     heritage: "Leveraging Zimbabwe's rich cultural history and Great Zimbabwe architectural logic to inform modern structural and social design.",
     technology: "Bridging the digital divide by applying global technological frameworks to local Zimbabwean infrastructure bottlenecks.",
@@ -87,7 +87,7 @@ export const generateEducation5StudyGuide = async (book: Book): Promise<StudyGui
   await new Promise(resolve => setTimeout(resolve, 3500));
 
   const analysis = performInDepthAnalysis(book);
-  const heritageContext = mapToEducation5Principles(analysis, book);
+  const heritageContext = mapToEducation5Principles(analysis);
   const mainTheme = analysis[0];
 
   // Specific content generation based on analysis
